@@ -8,11 +8,7 @@ jobs:
       - name: PyInstaller Action
         uses: Martin005/pyinstaller-action@v1.2.0
         with:
-          entry_script: "main.py"
-          output_dir: "dist"
-          additional_options: "-F"
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: dist
-          path: dist/*
+          spec: "main.py"
+          exe_path: "dist"
+          options: "-F"
+          upload_exe_with_name: "wuwa-fps-unlocker.exe"
