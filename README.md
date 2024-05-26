@@ -1,6 +1,12 @@
+# wuwa-fps-unlocker
+
 A simple python script to uncap Wuthering Waves' 60 FPS Framerate Cap
 
 I am not sure who came up with the original idea to edit LocalStorage but if anyone knows, open a PR with an edit please and thanks
+
+# Requirements for Building
+
+- [Python](https://www.python.org/)
 
 # Using
 
@@ -20,7 +26,7 @@ you can install pick and pyinstaller using requirements.txt using the following 
 pip install -r requirements
 ```
 
-or you can install them both manually. The rest of the libraries used in this script are built in.
+or you can install them both manually. The rest of the libraries used in this script are built into python.
 
 ```sh
 pip install pick

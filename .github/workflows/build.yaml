@@ -10,5 +10,5 @@ jobs:
         with:
           spec: "main.py"
           requirements: "requirements.txt"
-          options: --onefile, name "wuwa-fps-unlocker", --windowed
+          options: --onefile, --name "wuwa-fps-unlocker.exe", --windowed
           upload_exe_with_name: "wuwa-fps-unlocker"
