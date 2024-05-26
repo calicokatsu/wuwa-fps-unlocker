@@ -1,0 +1,17 @@
+name: build-executable
+run-name: Build executable
+on: [push]
+jobs:
+  build:
+    - name: PyInstaller Action
+      uses: Martin005/pyinstaller-action@v1.2.0
+      with:
+        entry_script: "main.py"
+        output_dir: "dist"
+        additional_options: "-F"
+
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: dist
+        path: dist/*
