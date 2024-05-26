@@ -19,7 +19,7 @@ def is_admin():
 # Which unfortunately means this script doesn't work on Linux
 # Maybe soon?
 if is_admin(): 
-    # Selector for FrameRate and Input for the game folder's path
+    # Selector for Framerate and Input for the game folder's path
     framerateOptions = [60, 120, 144, 165, 240, "Unlimited"]
     filePath = input("Enter game path (Wuthering Waves Game): ")
 
