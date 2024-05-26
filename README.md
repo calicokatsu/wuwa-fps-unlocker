@@ -1,5 +1,7 @@
 A simple python script to uncap Wuthering Waves' 60 FPS Framerate Cap
 
+I am not sure who came up with the original idea to edit LocalStorage but if anyone knows, open a PR with an edit please and thanks
+
 # Using
 
 ## Cloning the Repository

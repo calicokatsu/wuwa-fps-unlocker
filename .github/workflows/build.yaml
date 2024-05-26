@@ -8,7 +8,7 @@ jobs:
       - name: PyInstaller Action
         uses: Martin005/pyinstaller-action@v1.2.0
         with:
-          spec: "main.py/"
+          spec: "main.py"
           requirements: "requirements.txt"
           options: --onefile, name "wuwa-fps-unlocker", --windowed
-          upload_exe_with_name: "wuwa-fps-unlocker-${{ github.event.head_commit.id }}"
+          upload_exe_with_name: "wuwa-fps-unlocker"
