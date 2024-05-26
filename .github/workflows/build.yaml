@@ -10,5 +10,5 @@ jobs:
         with:
           spec: "main.py"
           exe_path: "dist"
-          options: "-F"
-          upload_exe_with_name: "wuwa-fps-unlocker.exe"
+          options: --onefile
+          upload_exe_with_name: "wuwa-fps-unlocker-${{ github.event.head_commit.id }}"
