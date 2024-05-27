@@ -2,7 +2,7 @@
 
 A simple python script to uncap Wuthering Waves' Framerate
 
-Credit to [https://x.com/Notmdi/status/1793581051765473508](Dim) for finding this one out
+Credit to [Dim on Twitter](https://x.com/Notmdi/status/1793581051765473508) for finding this one out
 
 # Requirements
 
