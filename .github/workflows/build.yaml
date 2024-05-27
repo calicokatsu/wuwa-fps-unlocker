@@ -5,10 +5,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: PyInstaller Action
-        uses: Martin005/pyinstaller-action@v1.2.0
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v5
         with:
-          spec: "main.py"
-          requirements: "requirements.txt"
-          options: --onefile, --name "wuwa-fps-unlocker.exe", --windowed
-          upload_exe_with_name: "wuwa-fps-unlocker"
+          python-version: "3.12.3"
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pyinstaller --onefile main.py
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: wuwa-fps-unlocker
+          path: dist
