@@ -1,22 +1,27 @@
-# wuwa-fps-unlocker
+# wuwa-fps-unlocker (USE AT YOUR OWN RISK!!!!!! )
 
-A simple python script to uncap Wuthering Waves' 60 FPS Framerate Cap
+A simple python script to uncap Wuthering Waves' Framerate
 
-I am not sure who came up with the original idea to edit LocalStorage but if anyone knows, open a PR with an edit please and thanks
+Credit to [https://x.com/Notmdi/status/1793581051765473508](Dim) for finding this one out
 
-# Requirements for Building
+# Requirements
 
-- [Python](https://www.python.org/)
+For building an executable and running as a command, only [Python](https://python.org) is required.
 
 # Using
 
-## Cloning the Repository
+## Using pre-built executables
+
+You can find pre-built executables in the latest build action under any passing [build artifacts](https://github.com/calicokatsu/wuwa-fps-unlocker/actions/workflows/build.yaml) or under [Releases](https://github.com/calicokatsu/wuwa-fps-unlocker/releases)
+
+## Building an Executable
+
+First, clone the repository and enter it's directory
 
 ```sh
 git clone https://github.com/calicokatsu/wuwa-fps-unlocker
+cd wuwa-fps-unlocker
 ```
-
-## Building an Executable
 
 #### Using pyinstaller
 
@@ -46,14 +51,12 @@ Then, Simply run the following commands:
 pyinstaller -F main.py
 ```
 
-and voila, you should now have the script bundled into an exe in the newly created `dist` folder.
+and voila, you should now have the script bundled into an exe in the newly created `dist` folder. Run the executable as administrator, follow the instructions and enjoy (gl on your pulls <3)
 
 ## Running as a standard python script
 
-Run the following command
+Run the following command with an elevated command prompt, follow the instructions and enjoy
 
 ```sh
 python main.py
 ```
-
-simple & clean
